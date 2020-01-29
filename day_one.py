@@ -88,6 +88,7 @@ def accumulate_and_collect_until_duplicate(input):
         accumulator += int(c[1:])
       elif c[0] == '-':
         accumulator -= int(c[1:])
+
       if accumulator in unique_accumulants:
         return accumulator
       else:
